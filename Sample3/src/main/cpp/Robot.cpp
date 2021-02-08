@@ -76,7 +76,7 @@ void Robot::OperatorControl() {
   std::cout << "Entering Operator Control" << std::endl;
   while (IsOperatorControl() && IsEnabled()) {
     // Drive with arcade style (use right stick)
-    std::cout << "JoyY: " << m_stick.GetY() << " JoyX: " << m_stick.GetX() << std::endl;
+    //std::cout << "JoyY: " << m_stick.GetY() << " JoyX: " << m_stick.GetX() << std::endl;
     m_robotDrive.ArcadeDrive(m_stick.GetY(), m_stick.GetX());
 
     // The motors will be updated every 5ms
